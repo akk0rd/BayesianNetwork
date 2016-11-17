@@ -12,18 +12,20 @@ NaiveBayes::NaiveBayes(){
     numClasses = 0;
     numFeatures = 0;    
     classes = NULL;
-    features = NULL;    
+    features = NULL;
 }
 
 NaiveBayes::~NaiveBayes(){
-    delete classes;
-    delete features;   
+    features = NULL;
+    classes = NULL;    
     delete mapSubFeatuByFeatu;
+    delete cantSubFeatByFeat;
     delete tabClassFreq;
     delete tabClassXFeatXSubFeaFreq;
-    delete fetDadaClaseProb;
+    delete tabClassXFeatXSubFeaFreq;
     delete priorProb;
-    delete eviProb; 
+    delete eviProb;     
+    delete fetDadaClaseProb;
 }
 
 bool NaiveBayes::loadFileClassFeature(string nameFile){    

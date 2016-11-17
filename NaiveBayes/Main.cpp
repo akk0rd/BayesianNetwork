@@ -11,5 +11,6 @@ int main(){
     // naiveBayes->imprimirProbabilidades();
     naiveBayes->testDataSetTest("dataSet/car-prueba.data");
 
+    delete naiveBayes;
     return 0;
 }

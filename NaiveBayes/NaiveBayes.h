@@ -16,7 +16,7 @@ class NaiveBayes{
         map<string, int>* cantSubFeatByFeat;
 
         map<string, int>* tabClassFreq;         
-        map<string, map<string, int>* >* tabFeatXSubFeatFreq;                
+        map<string, map<string, int>* >* tabFeatXSubFeatFreq;
         map<string, map<string, map<string,int>* >* >* tabClassXFeatXSubFeaFreq;
         
         map<string, double>* priorProb;
